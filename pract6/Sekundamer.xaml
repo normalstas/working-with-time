@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract6.Sekundamer"
+             Title="Секундомер">
+    <ScrollView Orientation="Vertical">
+        <StackLayout>
+
+            <StackLayout Padding="0,250,0,0" Orientation="Horizontal">
+                <Label x:Name="sekunds" Text="00:00:00"
+                     FontSize="40" HorizontalOptions="CenterAndExpand"/>
+                <Button Text="+" IsEnabled="False" IsVisible="False" Clicked="Plus" Background="Gray"
+                        HorizontalOptions="End" x:Name="pl"/>
+            </StackLayout>
+
+
+            <StackLayout Margin="0,50,0,0">
+                <Label x:Name="zapis"
+                       Text="" FontSize="25" HeightRequest="40" Background="Gray" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <StackLayout>
+                <Button Text="Удалить" IsEnabled="False" IsVisible="False" 
+                        Clicked="Delete"  Margin="0,10,0,0" Background="Gray" 
+                        HorizontalOptions="Center" x:Name="del"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand"
+                         Margin="0,0,0,20" >
+                <Button Text="X" FontSize="30" Clicked="Otm" Margin="0,0,10,0" WidthRequest="60" HeightRequest="60"
+                Background="Gray" CornerRadius="100" x:Name="otm" IsEnabled="False" IsVisible="False" 
+                    />
+                <Button Text="" Clicked="Start" Margin="0,0,10,0" WidthRequest="60" HeightRequest="60"
+                        Background="Gray" CornerRadius="100" x:Name="st" IsEnabled="True" IsVisible="True" 
+                    />
+                <Button Text="||" Clicked="Stop" IsEnabled="False" IsVisible="False" 
+                        WidthRequest="60" HeightRequest="60" Background="Gray"
+                        CornerRadius="100" VerticalOptions="End" x:Name="stopp"
+                />
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

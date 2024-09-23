@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract6.Napominalka"
+             Title="Напоминалка">
+    <ScrollView>
+        <StackLayout Orientation="Vertical" x:Name="st1">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Введите дату и время напоминания" Background="Transparent"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <DatePicker x:Name="dbDate" Format="dd MMM yyyy"/>
+                <TimePicker x:Name="dbTime" Format="HH mm"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Label Text="Введите ваше сообщение"/>
+                <Entry x:Name="entsoo"/>
+                <Button Text="Отправить" Clicked="Button_Clicked"/>
+            </StackLayout>
+                
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

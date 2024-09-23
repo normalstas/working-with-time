@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract6.Budilnik"
+             Title="Будильник">
+    <StackLayout >
+        <StackLayout Orientation="Vertical">
+
+            <StackLayout  Orientation="Horizontal" Margin="0,5,0,5">
+                <Button Text="Будильник 1" Clicked="bud1_Clicked" x:Name="bud1" IsVisible="False"
+                 HorizontalOptions="FillAndExpand" Background="Transparent"/>
+                <Switch x:Name="sw1" Toggled="sw1_Toggled"
+                        IsToggled="False" IsVisible="False"/>
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="0,5,0,5" x:Name="st1" IsVisible="False">
+                <TimePicker x:Name="tm1"  Format="HH mm" HorizontalOptions="FillAndExpand" />
+                <Picker x:Name="d1Picker" HorizontalTextAlignment="Center"
+                    HorizontalOptions="FillAndExpand" 
+                    />
+                
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="0,5,0,5">
+                <Button Text="Будильник 2"  HorizontalOptions="FillAndExpand" Background="Transparent"  Clicked="bud2_Clicked" x:Name="bud2" IsVisible="False"/>
+                <Switch x:Name="sw2" Toggled="sw2_Toggled" IsToggled="False" IsVisible="False"
+                         />
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" x:Name="st2" IsVisible="False">
+                <TimePicker x:Name="tm2"  Format="HH mm" HorizontalOptions="FillAndExpand" />
+                <Picker x:Name="d2Picker" HorizontalTextAlignment="Center"
+           HorizontalOptions="FillAndExpand" 
+           />
+                
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="0,5,0,5">
+                <Button Text="Будильник 3"  HorizontalOptions="FillAndExpand" Background="Transparent" Clicked="bud3_Clicked" x:Name="bud3" IsVisible="False"/>
+                <Switch x:Name="sw3" Toggled="sw3_Toggled" IsToggled="False"
+                        IsVisible="False"  />
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" x:Name="st3" IsVisible="False">
+                <TimePicker x:Name="tm3"  Format="HH mm" HorizontalOptions="FillAndExpand" />
+                <Picker x:Name="d3Picker" HorizontalTextAlignment="Center"
+           HorizontalOptions="FillAndExpand" 
+           />
+                
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="0,5,0,5" >
+
+                <Button Text="Будильник 4"  HorizontalOptions="FillAndExpand"
+                        Background="Transparent" Clicked="bud4_Clicked" x:Name="bud4" 
+                        IsVisible="False"/>
+                <Switch x:Name="sw4" Toggled="sw4_Toggled"   IsToggled="False"
+                        IsVisible="False"  />
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" x:Name="st4" IsVisible="False">
+                <TimePicker x:Name="tm4"  Format="HH mm"
+                            HorizontalOptions="FillAndExpand" />
+                <Picker x:Name="d4Picker" HorizontalTextAlignment="Center"
+                        HorizontalOptions="FillAndExpand"/>
+               
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" Margin="0,5,0,5">
+                <Button Text="Будильник 5" HorizontalOptions="FillAndExpand"
+                        Background="Transparent" Clicked="bud5_Clicked" x:Name="bud5" 
+                        IsVisible="False"/>
+                <Switch x:Name="sw5" Toggled="sw5_Toggled" IsToggled="False" 
+                        IsVisible="False"  />
+
+            </StackLayout>
+            
+            
+
+            <StackLayout Orientation="Horizontal" x:Name="st5" IsVisible="False">
+                <TimePicker x:Name="tm5"  Format="HH mm" HorizontalOptions="FillAndExpand" />
+                <Picker x:Name="d5Picker" HorizontalTextAlignment="Center"
+           HorizontalOptions="FillAndExpand" 
+           />
+               
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Center">
+                <Button Text="+" Clicked="Button_Clicked" CornerRadius="100"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <!--<StackLayout Orientation="Vertical" >
+            <StackLayout  Orientation="Horizontal" Margin="0,5,0,5">
+                <Button Text="Будильник 1" Clicked="bud1_Clicked" x:Name="bud1" IsVisible="False"
+                             HorizontalOptions="FillAndExpand" Background="Transparent"/>
+                <Switch x:Name="sw1" Toggled="sw1_Toggled" IsToggled="False" IsVisible="False"/>
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" x:Name="st1" IsVisible="False">
+                <TimePicker x:Name="tm1"  Format="HH mm"/>
+                <Picker x:Name="d1Picker" HorizontalTextAlignment="Center"
+                 HorizontalOptions="FillAndExpand" 
+                 />
+                <Label Text="день" FontSize="15"
+      HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"  x:Name="pick1"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="0,5,0,5">
+                <Button Text="Будильник 2"  HorizontalOptions="FillAndExpand" Background="Transparent"  Clicked="bud2_Clicked" x:Name="bud2" IsVisible="False"/>
+                <Switch x:Name="sw2" Toggled="sw2_Toggled" IsToggled="False" IsVisible="False" />
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" x:Name="st2" IsVisible="False">
+                <TimePicker x:Name="tm2"  Format="HH mm"/>
+                <Picker x:Name="d2Picker" HorizontalTextAlignment="Center"
+           HorizontalOptions="FillAndExpand" 
+           />
+                <Label Text="день" FontSize="15"
+HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"  x:Name="pick2"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="0,5,0,5">
+                <Button Text="Будильник 3"  HorizontalOptions="FillAndExpand" Background="Transparent" Clicked="bud3_Clicked" x:Name="bud3" IsVisible="False"/>
+                <Switch x:Name="sw3" Toggled="sw3_Toggled" IsToggled="False" IsVisible="False" />
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" x:Name="st3" IsVisible="False">
+                <TimePicker x:Name="tm3"  Format="HH mm"/>
+                <Picker x:Name="d3Picker" HorizontalTextAlignment="Center"
+           HorizontalOptions="FillAndExpand" 
+           />
+                <Label Text="день" FontSize="15"
+HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"  x:Name="pick3"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="0,5,0,5" >
+
+                <Button Text="Будильник 4"  HorizontalOptions="FillAndExpand" Background="Transparent" Clicked="bud4_Clicked" x:Name="bud4" IsVisible="False"/>
+                <Switch x:Name="sw4" Toggled="sw4_Toggled"   IsToggled="False" IsVisible="False"  />
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" x:Name="st4" IsVisible="False">
+                <TimePicker x:Name="tm4"  Format="HH mm"/>
+                <Picker x:Name="d4Picker" HorizontalTextAlignment="Center"
+           HorizontalOptions="FillAndExpand" 
+           />
+                <Label Text="день" FontSize="15"
+HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"  x:Name="pick4"/>
+            </StackLayout>
+            <StackLayout  Orientation="Horizontal" Margin="0,5,0,5">
+                <Button Text="Будильник 5" HorizontalOptions="FillAndExpand" Background="Transparent" Clicked="bud5_Clicked" x:Name="bud5" IsVisible="False"/>
+                <Switch x:Name="sw5" Toggled="sw5_Toggled" IsToggled="False" IsVisible="False" />
+
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" x:Name="st5" IsVisible="False">
+                <TimePicker x:Name="tm5"  Format="HH mm"/>
+                <Picker x:Name="d5Picker" HorizontalTextAlignment="Center"
+           HorizontalOptions="FillAndExpand" 
+           />
+                <Label Text="день" FontSize="15"
+HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"  x:Name="pick5"/>
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="Center">
+                <Button Text="+" Clicked="Button_Clicked" CornerRadius="100" Margin="0,350,0,0" />
+            </StackLayout>
+        </StackLayout>-->

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract6.Taimer"
+             Title="Таймер">
+    <ScrollView>
+        <StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="0,250,0,0">
+                <Picker x:Name="HourPicker" HorizontalTextAlignment="Center"
+                        IsVisible="True" HorizontalOptions="FillAndExpand" 
+                        />
+                <Label Text="ч" FontSize="15" IsVisible="True"
+                      HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand"  x:Name="pick1"/>
+                <Picker x:Name="MinutePicker" HorizontalTextAlignment="Center" 
+                         IsVisible="True" HorizontalOptions="FillAndExpand" 
+                       />
+                <Label Text="м" FontSize="15" VerticalOptions="CenterAndExpand" IsVisible="True"
+                        HorizontalOptions="FillAndExpand"  x:Name="pick2"/>
+                <Picker x:Name="SecondPicker" HorizontalTextAlignment="Center"  
+                        IsVisible="True" HorizontalOptions="FillAndExpand"  
+                       />
+                <Label Text="c" FontSize="15" VerticalOptions="CenterAndExpand"  IsVisible="True"
+                        HorizontalOptions="FillAndExpand"  x:Name="pick3"/>
+                <Label Text="" FontSize="35" IsVisible="False" HorizontalOptions="CenterAndExpand" x:Name="lb"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="Center" Margin="0,0,0,40" Orientation="Horizontal">
+                <Button Text="X" FontSize="30" Clicked="Otm" Margin="0,0,10,0" WidthRequest="60" HeightRequest="90"
+                    Background="Gray" x:Name="otm" IsEnabled="False" IsVisible="False"/>
+                <Button Text="Поставить" Clicked="Button_Clicked" Margin="0,0,10,0" WidthRequest="60" HeightRequest="90"
+        Background="Gray" x:Name="st" IsEnabled="True" IsVisible="True"/>
+                
+               
+            </StackLayout>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>

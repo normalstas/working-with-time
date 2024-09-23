@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="pract6.MainPage">
+
+    <ScrollView>
+        <StackLayout Margin="0,250,0,0" >
+            <Label Text= "Рязань Сейчас:" FontSize="35" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label Text="" FontSize="35" x:Name="date" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Label Text="" FontSize="35" x:Name="time" VerticalOptions="Center" HorizontalOptions="Center"/>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

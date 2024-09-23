@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="pract6.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:pract6"
+    Shell.FlyoutBehavior="Disabled"
+    Title="pract6">
+    <TabBar>
+        <Tab Title="Часы">
+
+            <ShellContent
+         Title="Часы"
+         ContentTemplate="{DataTemplate local:MainPage}"
+         Route="MainPage" />
+
+        </Tab>
+        <Tab Title="Секунды">
+            <ShellContent Title="Секундомер" ContentTemplate="{DataTemplate local:Sekundamer}"/>
+        </Tab>
+        <Tab Title="Таймер">
+            <ShellContent Title="Таймер" ContentTemplate="{DataTemplate local:Taimer}"/>
+        </Tab>
+        <Tab Title="Буди">
+            <ShellContent Title="Буди" ContentTemplate="{DataTemplate local:Budilnik}"/>
+        </Tab>
+        <Tab Title="Напомни">
+            <ShellContent Title="Напомни" ContentTemplate="{DataTemplate local:Napominalka}"/>
+        </Tab>
+    </TabBar>
+</Shell>
